@@ -1,0 +1,133 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.notificationContainer {
+    z-index: 10;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(63, 47, 47, 0.418);
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.5s ease-in-out both;
+}
+
+.header {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    user-select: none;
+    text-shadow: 0 0 8px transparent;
+    transition: all 0.3s;
+}
+
+.header:hover {
+    text-shadow: 0 0 8px black;
+    color: white;
+}
+
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 35px;
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+
+.relative {
+    position: relative;
+}
+
+.input {
+    margin-top: 10px;
+    width: 440px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid;
+    font-size: 1.5em;
+}
+
+.label {
+    position: absolute;
+    left: 20px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.descriptionLabel {
+    position: absolute;
+    left: 55px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.name {
+    position: relative;
+}
+
+.description {
+    overflow: auto;
+    height: 260px;
+    padding: 10px;
+    resize: none;
+}
+
+.button {
+    margin-bottom: 20px;
+    font-size: 2em;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.add {
+    background-color: rgb(83, 207, 83);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add:hover {
+    background-color: rgb(24, 192, 24);
+}
+
+.disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.fadeOut {
+    animation: fadeOut 0.3s ease-in-out both;
+}
