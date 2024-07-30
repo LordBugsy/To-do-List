@@ -1,5 +1,7 @@
 # To-do List
 
+![To-do List](https://i.gyazo.com/e4ab22badbebbdfae65dda104a4cdc33.png)
+
 ## Description
 This responsive to-do list was made with React. In this app, you will be able to create, delete, and move tasks around depending on their "priority." You can also add descriptions to these tasks! This app uses the following React hooks:
 - useState
